@@ -1,0 +1,33 @@
+title: "Les Affaires à Mariska"
+description: "Des affaires de ma fille à vendre"
+url: "https://mariska.marcelgerber.ch"  # or your custom domain
+baseurl: ""  # leave blank if using a custom domain
+navigation: main
+
+remote_theme: "mmistakes/minimal-mistakes"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-include-cache
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+
+collections:
+  pages:
+    output: true
+
+  articles:
+    output: true
+    permalink: /articles/:path/
+
+exclude:
+  - gems/
+

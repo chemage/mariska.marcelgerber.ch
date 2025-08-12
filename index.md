@@ -1,0 +1,28 @@
+---
+layout: home
+title: "Accueil"
+permalink: /
+sidebar:
+  nav: "sidebar"
+  sticky: true
+author_profile: false
+---
+
+Bienvenue sur ma page d'affaires à vendre.
+
+<div class="cards">
+{% for item in site.articles %}
+  <article class="card">
+	<a href="{{ item.url }}">
+		<h3 class="card-title">{{ item.title }}</h3>
+    </a>
+	<div class="card-content">
+	<div class="card-price"><b>{{ item.price }}</b></div>
+	</div>
+	<a href="{{ item.url }}">
+    	<img class="card-image" src="{{ item.image }}" alt="{{ item.title }}">
+    </a>
+  </article>
+{% endfor %}
+</div>
+
