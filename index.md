@@ -25,4 +25,3 @@ Bienvenue sur ma page d'affaires à vendre.
   </article>
 {% endfor %}
 </div>
-
